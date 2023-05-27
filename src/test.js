@@ -14,7 +14,6 @@ function check() {
     let guess = document.querySelector("#guess").value;
     document.querySelector("#guess").value = "";
     console.log(guess);
-    console.log(guess.length);
     let a_cnt = 0, b_cnt = 0;
     for (i = 0; i < guess.length; ++i) {
         if (!(guess.charCodeAt(i) >= 48 && guess.charCodeAt(i) <= 57)) {
@@ -29,7 +28,6 @@ function check() {
             }
         }
     }
-    console.log(guess);
     for (i = 0; i < ans.length; ++i) {
         if (ans[i] == guess[i])
             a_cnt++;
